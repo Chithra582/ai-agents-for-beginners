@@ -1,0 +1,15 @@
+name: "safety-boundary-auditor"
+description: "Audits agent prompts and tool definitions for prompt injection risks and privilege escalation."
+input_schema:
+  type: "object"
+  properties:
+    system_prompt:
+      type: "string"
+      description: "Agent system prompt and behavioral instructions."
+    tool_definitions:
+      type: "array"
+      items:
+        type: "object"
+      description: "List of tool specifications exposed to the agent."
+  required:
+    - "system_prompt"

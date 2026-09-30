@@ -1,0 +1,13 @@
+name: "curriculum-lesson-navigator"
+description: "Retrieves structured lesson concepts, code walkthroughs, and learning objectives."
+input_schema:
+  type: "object"
+  properties:
+    lesson_number:
+      type: "string"
+      description: "Lesson directory code (e.g., '01-intro-to-ai-agents', '08-multi-agent')."
+    topic_filter:
+      type: "string"
+      description: "Optional specific topic or concept to extract."
+  required:
+    - "lesson_number"

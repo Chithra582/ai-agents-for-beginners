@@ -1,0 +1,17 @@
+name: "rag-chunking-inspector"
+description: "Analyzes text chunking strategies, vector embeddings, and similarity retrieval scores."
+input_schema:
+  type: "object"
+  properties:
+    sample_text:
+      type: "string"
+      description: "Source text to chunk and analyze."
+    chunking_strategy:
+      type: "string"
+      description: "Strategy (fixed_size, recursive, semantic, markdown_header)."
+    chunk_size:
+      type: "integer"
+      description: "Target chunk size in tokens or characters."
+  required:
+    - "sample_text"
+    - "chunking_strategy"

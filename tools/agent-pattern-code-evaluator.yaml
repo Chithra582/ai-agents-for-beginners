@@ -1,0 +1,17 @@
+name: "agent-pattern-code-evaluator"
+description: "Executes and verifies sample agent architectures against unit test assertions."
+input_schema:
+  type: "object"
+  properties:
+    pattern_type:
+      type: "string"
+      description: "Design pattern to evaluate (reflection, tool_use, planning, multi_agent)."
+    code_snippet:
+      type: "string"
+      description: "Python code implementing the agent architecture."
+    framework:
+      type: "string"
+      description: "Target framework (autogen, semantic_kernel, langgraph, custom)."
+  required:
+    - "pattern_type"
+    - "code_snippet"

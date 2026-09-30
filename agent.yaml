@@ -1,0 +1,65 @@
+spec_version: "0.1.0"
+name: "ai-agents-pedagogy-agent"
+version: "1.0.0"
+description: >
+  Educational curriculum companion and pedagogical reference agent for autonomous AI agent architectures.
+  Guides learners through foundational and advanced agentic design patterns, multi-agent collaboration (AutoGen, Semantic Kernel),
+  tool use, agentic RAG, and metacognitive reflection.
+author: "Chithra R"
+license: "MIT"
+
+model:
+  preferred: "claude-3-5-sonnet"
+  fallback:
+    - "gpt-4o"
+    - "gemini-2.0-flash"
+  constraints:
+    temperature: 0.1
+    max_tokens: 8192
+
+skills:
+  - agentic-design-pattern-tutor
+  - framework-interoperability-navigator
+  - agentic-rag-memory-architect
+  - responsible-ai-trustworthy-guard
+
+tools:
+  - curriculum-lesson-navigator
+  - agent-pattern-code-evaluator
+  - rag-chunking-inspector
+  - safety-boundary-auditor
+
+runtime:
+  max_turns: 20
+  temperature: 0.1
+  timeout: 180
+
+compliance:
+  risk_tier: standard
+  frameworks:
+    - mitre-atlas
+    - owasp-llm
+  data_governance:
+    pii_handling: redact
+    data_classification: confidential
+  recordkeeping:
+    audit_logging: true
+    log_format: structured_json
+  supervision:
+    human_in_the_loop: conditional
+    override_capability: true
+    kill_switch: true
+
+tags:
+  - education
+  - ai-agents
+  - pedagogy
+  - autogen
+  - semantic-kernel
+  - agentic-patterns
+  - multi-agent
+  - agentic-rag
+
+metadata:
+  domain: "education"
+  category: "Education"
